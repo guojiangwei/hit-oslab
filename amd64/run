@@ -1,5 +1,7 @@
 #!/bin/sh
+echo `which $0`
 export OSLAB_PATH=$(dirname `which $0`)
+echo $OSLAB_PATH
 
 if [ "$1" ] && [ "$1" = "init" ] ; then
     if [ -f $OSLAB_PATH/linux-0.11.tar.gz ]; then

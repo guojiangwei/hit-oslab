@@ -37,17 +37,17 @@ install_gcc34_i386() {
 
 install_dep_i386() {
     echo "* Install dependencies for x86(i386) arch now......"
-    sudo apt-get install bin86
-    sudo apt-get install build-essential
+    sudo apt-get -y install bin86
+    sudo apt-get -y install build-essential
     echo "* Install dependencies for x86(i386) arch now......\033[34mDone\033[0m"
 }
 
 install_dep_amd64() {
     echo "* Install dependencies for x86_64(amd64) arch now......"
-    sudo apt-get install bin86
-    sudo apt-get install gcc-multilib
-    sudo apt-get install build-essential
-    sudo apt-get install bochs bochs-x bochs-sdl
+    sudo apt-get -y install bin86
+    sudo apt-get -y install gcc-multilib
+    sudo apt-get -y install build-essential
+    sudo apt-get -y install bochs bochs-x bochs-sdl
     echo "* Install dependencies for x86_64(amd64) arch now......\033[34mDone\033[0m"
 }
 
