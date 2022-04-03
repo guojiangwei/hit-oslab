@@ -20,10 +20,10 @@ hit-oslab
 ```shell
 git clone https://github.com/DeathKing/hit-oslab.git ~/hit-oslab
 cd ~/hit-oslab
-./setup.sh
+docker build . -t oslab:1.0
+docker run -idt -p 5901:5901 --name ostest oslab:1.0
 ```
-
-如果想要跳过软件源更新步骤，请在`./setup.sh`后加上参数`-s`或`--skip-update`。
+之后可以使用vncviewer 通过5901端口访问实验环境
 
 ## 复原
 
