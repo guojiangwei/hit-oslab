@@ -18,7 +18,7 @@ hit-oslab
 本安装脚本会将实验环境安装在用户目录下，文件名为oslab。如果有特殊需要，请自行移动文件夹位置。注意，请不要使用超级用户执行此安装命令，当有需要时hit-oslab会请求超级用户权限。
 
 ```shell
-git clone https://github.com/DeathKing/hit-oslab.git ~/hit-oslab
+git clone https://github.com/guojiangwei/hit-oslab.git ~/hit-oslab
 cd ~/hit-oslab
 docker build . -t oslab:1.0
 docker run -idt -p 5901:5901 --name ostest oslab:1.0
